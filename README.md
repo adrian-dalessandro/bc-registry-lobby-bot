@@ -38,7 +38,7 @@ ollowing format:
  "officials": [{"name": "...",
    "title": "...",
    "affiliation": "..."},
-   ...],
+   "..."],
  "lobbying_date": "...",
  "posted_date": "...",
  "lobbyists": "...",
