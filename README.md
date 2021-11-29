@@ -5,7 +5,7 @@ then tweet the string to a specified twitter account. We will detail here the st
 2. tweet.format.txt
 3. filters.json
 ## Updating Twitter App Information
-**Relevant File**: app.info.json
+**Relevant File**: app.info.json  
 Suppose that you want the twitter bot to send it's output to a new twitter account. You will need to collect 4 pieces of information and place them in the app.info.json file, which is formatted as such:
 ```json
 {"API Key": "YOUR API KEY HERE", 
@@ -30,7 +30,7 @@ d your notification of approval, you must now create an app. Follow these steps:
 12. Copy the Access Token Secret and paste it into the app.info.json file where specified (... quotation marks)
 13. You now have all of the credentials necessary!
 ## Updating the Tweet Format
-**Relevant File**: tweet.format.txt
+**Relevant File**: tweet.format.txt  
 This tool uses the liquid templating language to combine the formatting string in tweet.format.txt with the json formatted content parsed from the lobbyist registry website. The parsed results have the f
 ollowing format:
 ```json
@@ -49,6 +49,6 @@ And each key can be referrenced using liquid under these names. For example, if 
 Update: {%for person in officials%}{{person.name}} ({{person.title}}),{%endfor%} met with lobbyists from {{organization}}
 ```
 # Filtering Organization Names
-**Relevant File**: filters.json
+**Relevant File**: filters.json  
 Not all entries in the BC lobbyist registry may be relevant. This tool will only include organization names provided in _filters.json_. All entries must be included in a commo-delimited list with quotati
 on marks.
