@@ -48,7 +48,7 @@ And each key can be referrenced using liquid under these names. For example, if 
 ```liquid
 Update: {%for person in officials%}{{person.name}} ({{person.title}}),{%endfor%} met with lobbyists from {{organization}}
 ```
-# Filtering Organization Names
+## Filtering Organization Names
 **Relevant File**: filters.json  
 Not all entries in the BC lobbyist registry may be relevant. This tool will only include organization names provided in _filters.json_. All entries must be included in a commo-delimited list with quotati
 on marks.
